@@ -67,9 +67,9 @@ class TodayWeather extends StatelessWidget {
                                   child: Text(
                                 "Max ${
                                   weatherModel!.forecast!.forecastday!.first.day!.maxtempC.toString()}",
-                                    style: const TextStyle(fontSize: 18,color: Colors.white),),
+                                    style: const TextStyle(fontSize: 16,color: Colors.white),),
                                 ),
-                                const Text("o",style: TextStyle(fontSize: 15,color:Colors.white ),)
+                                const Text("o",style: TextStyle(fontSize: 10,color:Colors.white ),)
                               ],
                             ),
                             Row(
@@ -79,9 +79,9 @@ class TodayWeather extends StatelessWidget {
                                   padding:const EdgeInsets.only(top: 2),
                                   child: Text( "Min ${
                                       weatherModel!.forecast!.forecastday!.first.day!.mintempC.toString()}",
-                                    style: const TextStyle(fontSize: 20,color: Colors.white),),
+                                    style: const TextStyle(fontSize: 16,color: Colors.white),),
                                 ),
-                                const Text("o",style: TextStyle(fontSize: 15,color:Colors.white ),)
+                                const Text("o",style: TextStyle(fontSize: 10,color:Colors.white ),)
                               ],
                             ),
                           ],
