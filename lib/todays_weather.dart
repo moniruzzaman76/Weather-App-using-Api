@@ -26,7 +26,7 @@ class TodayWeather extends StatelessWidget {
                         ),
                         Text(DateFormat.yMMMMEEEEd().format(DateTime.parse(
                             weatherModel!.current!.lastUpdated.toString())),style: const TextStyle(
-                          fontSize: 20,
+                          fontSize: 18,
                           color: Colors.white,
                         ),
                         ),
