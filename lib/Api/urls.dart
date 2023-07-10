@@ -1,0 +1,1 @@
+String baseUrl= "http://api.weatherapi.com/v1/forecast.json?key=59b9fd29604e416e813122433230907&q=Bangladesh&day=7";
