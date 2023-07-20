@@ -22,17 +22,13 @@ class _WeatherScreenState extends State<WeatherScreen> {
           backgroundColor: Colors.deepPurple,
           centerTitle: true,
           title: const Text("Weather App"),
-          actions: [
-            IconButton(onPressed: () {}, icon: const Icon(Icons.settings)),
-            IconButton(onPressed: () {}, icon: const Icon(Icons.add)),
-          ],
         ),
         body: FutureBuilder(
           future: apiService.getWeatherData("Dhaka"),
           builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
 
             if (snapshot.hasData) {
-              WeatherModel? weatherModel = snapshot.data;
+              WeatherModel weatherModel = snapshot.data;
               return  TodayWeather(weatherModel: weatherModel);
             }
             if (snapshot.hasError) {

@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer';
 import 'package:http/http.dart';
 import 'package:weather/Api/urls.dart';
 import 'model_class.dart';
@@ -9,7 +10,7 @@ class ApiService{
 
     try{
       Response response = await get(Uri.parse(url));
-      print(response.body);
+      log(response.body);
       if(response.statusCode == 200){
         Map<String,dynamic> json = jsonDecode(response.body);
         WeatherModel weatherModel = WeatherModel.fromJson(json);
@@ -22,5 +23,4 @@ class ApiService{
     }
 
   }
-
 }
